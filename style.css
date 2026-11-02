@@ -1,0 +1,96 @@
+body {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("background.avif");
+    color: white;
+    text-align: center;
+    margin: 0;
+    background-image: 
+        linear-gradient(
+            rgba(10, 8, 12, 0.82),
+            rgba(10, 8, 12, 0.88)
+        ),
+        url("https://images.pexels.com/photos/29223512/pexels-photo-29223512.png");
+}
+
+header {
+    background-color: rgba(12, 53, 0, 0.171);;;
+    padding: 1px;
+}
+
+h1 {
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    color: #1c3d18;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.scene {
+    background-color: rgba(12, 53, 0, 0.171);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.scene img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: bold;
+    background-color: #003300a2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #95bb87;
+}
+
+.hidden {
+    display: none;
+}
+
+#forestResult,
+#cabinResult,
+#riverResult {
+    color: #f4d88a;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: #aaa;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .scene {
+        padding: 15px;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
