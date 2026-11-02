@@ -15,6 +15,15 @@
 
     <header>
         <h1>Lost in the Woods</h1>
+        <div id="status-bar">
+            <span id="battery">Phone Battery: 5%</span>
+            <div id="inventory">
+                <span>Inventory: </span>
+                <span id="inv-flashlight" class="item hidden">🔦 Flashlight</span>
+                <span id="inv-map" class="item hidden">🗺️ Map</span>
+                <span id="inv-code" class="item hidden">🔑 Code (1947)</span>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -28,8 +37,6 @@
             <p>
                 You're'suddenly stranded within an unfamiliar forest. <br> You're alone but notice your bag and phone beside you with 5% battery. <br> The sun is setting and its getting dark. Find <strong>clues</strong> to survive!
             </p>
-
-            <p id="battery"><strong>NOTICE:</strong> Phone Battery: 5%</p>
 
             <button onclick="searchBackpack()">
                 Search Bag

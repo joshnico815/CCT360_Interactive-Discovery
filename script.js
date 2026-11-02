@@ -19,6 +19,7 @@ function showScene(number) {
 function searchBackpack() {
     hasFlashlight = true;
 
+    document.getElementById("inv-flashlight").classList.remove("hidden");
     document.getElementById("forestResult").innerHTML =
         "You found a flashlight! Save it for later.";
 }
@@ -54,6 +55,7 @@ function choosePath(path) {
 function examineNote() {
     foundCode = true;
 
+    document.getElementById("inv-code").classList.remove("hidden");
     document.getElementById("cabinResult").innerHTML =
         "The note reveals a secret code: 7567.";
 }
@@ -63,6 +65,7 @@ function openDrawer() {
     if (foundCode) {
         hasMap = true;
 
+        document.getElementById("inv-map").classList.remove("hidden");
         document.getElementById("cabinResult").innerHTML =
             "You unlocked the drawer. Inside you found a map!";
     } else {
@@ -121,7 +124,9 @@ function restartGame() {
     chosenPath = "";
 
     document.getElementById("battery").innerHTML = "Phone Battery: 5%";
-
+    document.getElementById("inv-flashlight").classList.add("hidden");
+    document.getElementById("inv-map").classList.add("hidden");
+    document.getElementById("inv-code").classList.add("hidden");
     document.getElementById("forestResult").innerHTML = "";
     document.getElementById("cabinResult").innerHTML = "";
     document.getElementById("riverResult").innerHTML = "";

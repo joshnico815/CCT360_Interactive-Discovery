@@ -26,6 +26,25 @@ h1 {
     color: #1c3d18;
 }
 
+#status-bar {
+    background-color: #1a2e26;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #325243;
+}
+
+.item {
+    background-color: #2b473b;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
 main {
     max-width: 800px;
     margin: auto;
